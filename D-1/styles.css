@@ -1,0 +1,1104 @@
+/* // delete the following line if no text is used */
+/* // edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+
+*{
+    color: white;
+    
+}
+
+body{
+    background-color: black;
+}
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: #353434;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.monitor{
+    height: 225px;
+    width: 400px;
+}
+
+.keyboard{
+    height: 175px;
+    width: 400px;
+    background-color: grey;
+    border-top: 2px solid rgb(155, 155, 155);
+    font-size: 17px;
+}
+
+.huruf{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    
+    
+}
+
+.huruf div{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    border-radius: 100px;
+}
+
+.angka{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 5px; 
+}
+
+.angka div{
+    width: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 100px;
+    
+}
+
+.huruf>div:hover, .angka>div:hover{
+    background-color: rgb(74, 74, 74);
+    cursor: pointer;
+}
+
+.huruf>.bulatluar:hover{
+    background-color: #353434;
+    cursor: default;
+}
+
+label>div:hover{
+    background-color: rgb(74, 74, 74);
+    cursor: pointer;
+}
+
+.bulatluar{
+    position: absolute;
+    top: 25%;
+    left: 175px;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.huruf .bulat{
+    width: 50px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px white;
+    
+}
+
+.angka .bulat{
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px white;
+    
+}
+
+.bulatluar .bulat{
+    width: 50px;
+    height: 30px;
+}
+
+#check1:checked ~ .bulatluar{
+    animation: kode1 2.5s ease;
+}
+
+@keyframes kode1 {
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    26%{opacity:1;}
+    35%{opacity:1;}
+    36%{opacity: 0;}
+    60%{opacity: 0;}
+    61%{opacity: 1;}
+    100%{opacity: 1;}  
+}
+
+#check2:checked ~ .bulatluar{
+    animation: kode2 4.75s ease;
+}
+
+@keyframes kode2 {
+    0%{opacity: 0;}
+    15%{opacity: 0;}
+    16%{opacity: 1;}
+    36%{opacity: 1;}
+    37%{opacity:0;}
+    51%{opacity: 0;}
+    52%{opacity:1;}
+    57%{opacity: 1;}
+    58%{opacity: 0;}
+    73%{opacity: 0;}
+    74%{opacity: 1;}
+    79%{opacity: 1;}
+    80%{opacity: 0;}
+    95%{opacity: 0;}
+    96%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check3:checked ~ .bulatluar{
+    animation: kode3 5.5s ease;
+}
+
+@keyframes kode3 {
+    0%{opacity: 0;}
+    13%{opacity: 0;}
+    14%{opacity: 1;}
+    32%{opacity: 1;}
+    33%{opacity: 0;}
+    46%{opacity: 0;}
+    47%{opacity: 1;}
+    52%{opacity: 1;}
+    53%{opacity: 0;}
+    65%{opacity: 0;}
+    66%{opacity: 1;}
+    83%{opacity: 1;}
+    84%{opacity: 0;}
+    95%{opacity: 0;}
+    96%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check4:checked ~ .bulatluar{
+    animation: kode4 3.75s ease;
+}
+
+@keyframes kode4{
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    21%{opacity: 1;}
+    47%{opacity: 1;}
+    48%{opacity: 0;}
+    67%{opacity: 0;}
+    68%{opacity: 1;}
+    75%{opacity: 1;}
+    76%{opacity: 0;}
+    93%{opacity: 0;}
+    94%{opacity:1;}
+    100%{opacity: 1;}
+}
+
+#check5:checked ~ .bulatluar{
+    animation: kode5 1s ease;
+}
+
+@keyframes kode5{
+    0%{opacity: 0;}
+    75%{opacity: 0;}
+    76%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check6:checked ~ .bulatluar{
+    animation: kode6 4.75s ease;
+}
+
+@keyframes kode6{
+    0%{opacity: 0;}
+    15%{opacity: 0;}
+    16%{opacity: 1;}
+    21%{opacity:1;}
+    22%{opacity: 0;}
+    37%{opacity: 0;}
+    38%{opacity: 1;}
+    43%{opacity: 1;}
+    44%{opacity: 0;}
+    59%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 1;}
+    81%{opacity: 0;}
+    94%{opacity: 0;}
+    95%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check7:checked ~ .bulatluar{
+    animation: kode7 4.5s ease;
+}
+
+@keyframes kode7{
+    0%{opacity: 0;}
+    15%{opacity: 0;}
+    16%{opacity: 1;}
+    38%{opacity: 1;}
+    39%{opacity: 0;}
+    54%{opacity: 0;}
+    55%{opacity: 1;}
+    77%{opacity: 1;}
+    78%{opacity: 0;}
+    94%{opacity: 0;}
+    95%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check8:checked ~ .bulatluar{
+    animation: kode8 4s ease;
+}
+
+@keyframes kode8{
+    0%{opacity: 0;}
+    17%{opacity: 0;}
+    18%{opacity: 1;}
+    25%{opacity: 1;}
+    26%{opacity: 0;}
+    43%{opacity: 0;}
+    44%{opacity: 1;}
+    51%{opacity: 1;}
+    52%{opacity: 0;}
+    69%{opacity: 0;}
+    70%{opacity: 1;}
+    77%{opacity: 1;}
+    78%{opacity: 0;}
+    93%{opacity: 0;}
+    94%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check9:checked ~ .bulatluar{
+    animation: kode9 2s ease;
+}
+
+@keyframes kode9{
+    0%{opacity: 0;}
+    37%{opacity: 0;}
+    38%{opacity: 1;}
+    50%{opacity: 1;}
+    51%{opacity: 0;}
+    87%{opacity: 0;}
+    88%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check10:checked ~ .bulatluar{
+    animation: kode10 6.25s ease;
+}
+
+@keyframes kode10{
+    0%{opacity: 0;}
+    11%{opacity: 0;}
+    12%{opacity: 1;}
+    16%{opacity: 1;}
+    17%{opacity: 0;}
+    28%{opacity: 0;}
+    29%{opacity: 1;}
+    45%{opacity: 1;}
+    46%{opacity: 0;}
+    57%{opacity: 0;}
+    58%{opacity: 1;}
+    74%{opacity: 1;}
+    75%{opacity: 0;}
+    86%{opacity: 0;}
+    87%{opacity: 1;}
+    100%{opacity: 1;}
+
+}
+
+#check11:checked ~ .bulatluar{
+    animation: kode11 4.5s ease;
+}
+
+@keyframes kode11 {
+    0%{opacity: 0;}
+    13%{opacity: 0;}
+    14%{opacity: 1;}
+    32%{opacity: 1;}
+    33%{opacity: 0;}
+    46%{opacity: 0;}
+    47%{opacity: 1;}
+    51%{opacity: 1;}
+    52%{opacity: 0;}
+    65%{opacity: 0;}
+    66%{opacity: 1;}
+    84%{opacity: 1;}
+    85%{opacity: 0;}
+    100%{opacity: 0;}
+
+}
+
+#check12:checked ~ .bulatluar{
+    animation: kode12 4.75s ease;
+}
+
+@keyframes kode12 {
+    0%{opacity: 0;}
+    15%{opacity: 0;}
+    16%{opacity: 1;}
+    21%{opacity: 1;}
+    22%{opacity: 0;}
+    37%{opacity: 0;}
+    38%{opacity: 1;}
+    58%{opacity: 1;}
+    59%{opacity: 0;}
+    74%{opacity: 0;}
+    75%{opacity: 1;}
+    80%{opacity: 1;}
+    81%{opacity: 0;}
+    95%{opacity: 0;}
+    96%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check13:checked ~ .bulatluar{
+    animation: kode13 3.5s ease;
+}
+
+@keyframes kode13{
+    0%{opacity: 0;}
+    16%{opacity: 0;}
+    17%{opacity: 1;}
+    38%{opacity: 1;}
+    39%{opacity: 0;}
+    55%{opacity: 0;}
+    56%{opacity: 1;}
+    87%{opacity: 1;}
+    88%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+#check14:checked ~ .bulatluar{
+    animation: kode14 2.75s ease;
+}
+
+@keyframes kode14{
+    0%{opacity: 0;}
+    19%{opacity: 0;}
+    20%{opacity: 1;}
+    45%{opacity: 1;}
+    46%{opacity: 0;}
+    65%{opacity: 0;}
+    66%{opacity: 1;}
+    73%{opacity: 1;}
+    74%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+#check15:checked ~ .bulatluar{
+    animation: kode15 5.25s ease;
+}
+
+@keyframes kode15{
+    0%{opacity: 0;}
+    13%{opacity: 0;}
+    14%{opacity: 1;}
+    34%{opacity: 1;}
+    35%{opacity: 0;}
+    48%{opacity: 0;}
+    49%{opacity: 1;}
+    69%{opacity: 1;}
+    70%{opacity: 0;}
+    83%{opacity: 0;}
+    84%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check16:checked ~ .bulatluar{
+    animation: kode16 5.5s ease;
+}
+
+@keyframes kode16{
+    0%{opacity: 0;}
+    13%{opacity: 0;}
+    14%{opacity: 1;}
+    19%{opacity: 1;}
+    20%{opacity: 0;}
+    33%{opacity: 0;}
+    34%{opacity: 1;}
+    52%{opacity: 1;}
+    53%{opacity: 0;}
+    65%{opacity: 0;}
+    66%{opacity: 1;}
+    84%{opacity: 1;}
+    85%{opacity: 0;}
+    94%{opacity: 0;}
+    95%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check17:checked ~ .bulatluar{
+    animation: kode17 6.25s ease;
+}
+
+@keyframes kode17{
+    0%{opacity: 0;}
+    11%{opacity: 0;}
+    12%{opacity: 1;}
+    28%{opacity: 1;}
+    29%{opacity: 0;}
+    40%{opacity: 0;}
+    41%{opacity: 1;}
+    57%{opacity: 1;}
+    58%{opacity: 0;}
+    69%{opacity: 0;}
+    70%{opacity: 1;}
+    74%{opacity: 1;}
+    75%{opacity: 0;}
+    86%{opacity: 0;}
+    87%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check18:checked ~ .bulatluar{
+    animation: kode18 3s ease;
+}
+
+@keyframes kode18{
+    0%{opacity: 0;}
+    16%{opacity: 0;}
+    17%{opacity: 1;}
+    23%{opacity: 1;}
+    24%{opacity: 0;}
+    40%{opacity: 0;}
+    41%{opacity: 1;}
+    65%{opacity: 1;}
+    66%{opacity: 0;}
+    82%{opacity: 0;}
+    83%{opacity: 1;}
+    90%{opacity: 1;}
+    91%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+#check19:checked ~ .bulatluar{
+    animation: kode19 3s ease;
+}
+
+@keyframes kode19{
+    0%{opacity: 0;}
+    16%{opacity: 0;}
+    17%{opacity: 1;}
+    27%{opacity: 1;}
+    28%{opacity: 0;}
+    44%{opacity: 0;}
+    45%{opacity: 1;}
+    55%{opacity: 1;}
+    56%{opacity: 0;}
+    72%{opacity: 0;}
+    73%{opacity: 1;}
+    83%{opacity: 1;}
+    84%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+#check20:checked ~ .bulatluar{
+    animation: kode20 1.75s ease;
+}
+
+@keyframes kode20{
+    0%{opacity: 0;}
+    42%{opacity: 0;}
+    43%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check21:checked ~ .bulatluar{
+    animation: kode21 3.75s ease;
+}
+
+@keyframes kode21{
+    0%{opacity: 0;}
+    17%{opacity: 0;}
+    18%{opacity: 1;}
+    24%{opacity: 1;}
+    25%{opacity: 0;}
+    41%{opacity: 0;}
+    42%{opacity: 1;}
+    50%{opacity: 1;}
+    51%{opacity: 0;}
+    75%{opacity: 0;}
+    76%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check22:checked ~ .bulatluar{
+    animation: kode22 4.75s ease;
+}
+
+@keyframes kode22{
+    0%{opacity: 0;}
+    15%{opacity: 0;}
+    16%{opacity: 1;}
+    21%{opacity: 1;}
+    22%{opacity: 0;}
+    38%{opacity: 0;}
+    39%{opacity: 1;}
+    44%{opacity: 1;}
+    45%{opacity: 0;}
+    60%{opacity: 0;}
+    61%{opacity: 1;}
+    66%{opacity: 1;}
+    67%{opacity: 0;}
+    82%{opacity: 0;}
+    83%{opacity: 1;}
+    100%{opacity: 1;}
+
+}
+
+#check23:checked ~ .bulatluar{
+    animation: kode23 4.5s ease;
+}
+
+@keyframes kode23{
+    0%{opacity: 0;}
+    16%{opacity: 0;}
+    17%{opacity: 1;}
+    23%{opacity: 1;}
+    24%{opacity: 0;}
+    40%{opacity: 0;}
+    41%{opacity: 1;}
+    63%{opacity: 1;}
+    64%{opacity: 0;}
+    78%{opacity: 0;}
+    79%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check24:checked ~ .bulatluar{
+    animation: kode24 5.5s ease;
+}
+
+@keyframes kode24{
+    0%{opacity: 0;}
+    13%{opacity: 0;}
+    14%{opacity: 1;}
+    32%{opacity: 1;}
+    33%{opacity: 0;}
+    46%{opacity: 0;}
+    47%{opacity: 1;}
+    52%{opacity: 1;}
+    53%{opacity: 0;}
+    66%{opacity: 0;}
+    67%{opacity: 1;}
+    71%{opacity: 1;}
+    72%{opacity: 0;}
+    82%{opacity: 0;}
+    83%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check25:checked ~ .bulatluar{
+    animation: kode25 6.25s ease;
+}
+
+@keyframes kode25{
+    0%{opacity: 0;}
+    12%{opacity: 0;}
+    13%{opacity: 1;}
+    29%{opacity: 1;}
+    30%{opacity: 0;}
+    43%{opacity: 0;}
+    44%{opacity: 1;}
+    48%{opacity: 1;}
+    49%{opacity: 0;}
+    61%{opacity: 0;}
+    62%{opacity: 1;}
+    78%{opacity: 1;}
+    79%{opacity: 0;}
+    86%{opacity: 0;}
+    87%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check26:checked ~ .bulatluar{
+    animation: kode26 5.5s ease;
+}
+
+@keyframes kode26{
+    0%{opacity: 0;}
+    13%{opacity: 0;}
+    14%{opacity: 1;}
+    31%{opacity: 1;}
+    32%{opacity: 0;}
+    45%{opacity: 0;}
+    46%{opacity: 1;}
+    63%{opacity: 1;}
+    64%{opacity: 0;}
+    77%{opacity: 0;}
+    78%{opacity: 1;}
+    82%{opacity: 1;}
+    83%{opacity: 0;}
+    95%{opacity: 0;}
+    96%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check27:checked ~ .bulatluar{
+    animation: kode27 8.75s ease;
+}
+
+@keyframes kode27{
+    0%{opacity: 0;}
+    8%{opacity: 0;}
+    9%{opacity: 1;}
+    20%{opacity: 1;}
+    21%{opacity: 0;}
+    29%{opacity: 0;}
+    30%{opacity: 1;}
+    41%{opacity: 1;}
+    42%{opacity: 0;}
+    50%{opacity: 0;}
+    51%{opacity: 1;}
+    62%{opacity: 1;}
+    63%{opacity: 0;}
+    71%{opacity: 0;}
+    72%{opacity: 1;}
+    83%{opacity: 1;}
+    84%{opacity: 0;}
+    90%{opacity: 0;}
+    91%{opacity: 1;}
+    100%{opacity: 1;}
+    
+
+}
+
+#check28:checked ~ .bulatluar{
+    animation: kode28 8s ease;
+}
+
+@keyframes kode28{
+    0%{opacity: 0;}
+    10%{opacity: 0;}
+    11%{opacity: 1;}
+    14%{opacity: 1;}
+    15%{opacity: 0;}
+    24%{opacity: 0;}
+    25%{opacity: 1;}
+    37%{opacity: 1;}
+    38%{opacity: 0;}
+    47%{opacity: 0;}
+    48%{opacity: 1;}
+    60%{opacity: 1;}
+    61%{opacity: 0;}
+    70%{opacity: 0;}
+    71%{opacity: 1;}
+    82%{opacity: 1;}
+    83%{opacity: 0;}
+    88%{opacity: 0;}
+    89%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check29:checked ~ .bulatluar{
+    animation: kode29 7.25s ease;
+}
+
+@keyframes kode29{
+    0%{opacity: 0;}
+    9%{opacity: 0;}
+    10%{opacity: 1;}
+    14%{opacity: 1;}
+    15%{opacity: 0;}
+    24%{opacity: 0;}
+    25%{opacity: 1;}
+    29%{opacity: 1;}
+    30%{opacity: 0;}
+    39%{opacity: 0;}
+    40%{opacity: 1;}
+    52%{opacity: 1;}
+    53%{opacity: 0;}
+    62%{opacity: 0;}
+    63%{opacity: 1;}
+    75%{opacity: 1;}
+    76%{opacity: 0;}
+    85%{opacity: 0;}
+    86%{opacity: 1;}
+    98%{opacity: 1;}
+    99%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+#check30:checked ~ .bulatluar{
+    animation: kode30 6.5s ease;
+}
+
+@keyframes kode30{
+    0%{opacity: 0;}
+    11%{opacity: 0;}
+    12%{opacity: 1;}
+    15%{opacity: 1;}
+    16%{opacity: 0;}
+    27%{opacity: 0;}
+    28%{opacity: 1;}
+    31%{opacity: 1;}
+    32%{opacity: 0;}
+    43%{opacity: 0;}
+    44%{opacity: 1;}
+    47%{opacity: 1;}
+    48%{opacity: 0;}
+    59%{opacity: 0;}
+    60%{opacity: 1;}
+    74%{opacity: 1;}
+    75%{opacity: 0;}
+    86%{opacity: 0;}
+    87%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check31:checked ~ .bulatluar{
+    animation: kode31 5.75s ease;
+}
+
+@keyframes kode31{
+    0%{opacity: 0;}
+    12%{opacity: 0;}
+    13%{opacity: 1;}
+    17%{opacity: 1;}
+    18%{opacity: 0;}
+    30%{opacity: 0;}
+    31%{opacity: 1;}
+    35%{opacity: 1;}
+    36%{opacity: 0;}
+    48%{opacity: 0;}
+    49%{opacity: 1;}
+    53%{opacity: 1;}
+    54%{opacity: 0;}
+    66%{opacity: 0;}
+    67%{opacity: 1;}
+    71%{opacity: 1;}
+    72%{opacity: 0;}
+    84%{opacity: 0;}
+    85%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check32:checked ~ .bulatluar{
+    animation: kode32 5s ease;
+}
+
+@keyframes kode32{
+    0%{opacity: 0;}
+    13%{opacity: 0;}
+    14%{opacity: 1;}
+    19%{opacity: 1;}
+    20%{opacity: 0;}
+    33%{opacity: 0;}
+    34%{opacity: 1;}
+    39%{opacity: 1;}
+    40%{opacity: 0;}
+    53%{opacity: 0;}
+    54%{opacity: 1;}
+    59%{opacity: 1;}
+    60%{opacity: 0;}
+    73%{opacity: 0;}
+    74%{opacity: 1;}
+    79%{opacity: 1;}
+    80%{opacity: 0;}
+    93%{opacity: 0;}
+    94%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check33:checked ~ .bulatluar{
+    animation: kode33 5.75s ease;
+}
+
+@keyframes kode33{
+    0%{opacity: 0;}
+    12%{opacity: 0;}
+    13%{opacity: 1;}
+    28%{opacity: 1;}
+    29%{opacity: 0;}
+    41%{opacity: 0;}
+    42%{opacity: 1;}
+    46%{opacity: 1;}
+    47%{opacity: 0;}
+    58%{opacity: 0;}
+    59%{opacity: 1;}
+    63%{opacity: 1;}
+    64%{opacity: 0;}
+    76%{opacity: 0;}
+    77%{opacity: 1;}
+    81%{opacity: 1;}
+    82%{opacity: 0;}
+    95%{opacity: 0;}
+    96%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check34:checked ~ .bulatluar{
+    animation: kode34 6.5s ease;
+}
+
+@keyframes kode34{
+    0%{opacity: 0;}
+    11%{opacity: 0;}
+    12%{opacity: 1;}
+    25%{opacity: 1;}
+    26%{opacity: 0;}
+    37%{opacity: 0;}
+    38%{opacity: 1;}
+    51%{opacity: 1;}
+    52%{opacity: 0;}
+    63%{opacity: 0;}
+    64%{opacity: 1;}
+    67%{opacity: 1;}
+    68%{opacity: 0;}
+    79%{opacity: 0;}
+    80%{opacity: 1;}
+    83%{opacity: 1;}
+    84%{opacity: 0;}
+    95%{opacity: 0;}
+    96%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#check35:checked ~ .bulatluar{
+    animation: kode35 7.25s ease;
+}
+
+@keyframes kode35{
+
+    0%{opacity: 0;}
+    9%{opacity: 0;}
+    10%{opacity: 1;}
+    22%{opacity: 1;}
+    23%{opacity: 0;}
+    32%{opacity: 0;}
+    33%{opacity: 1;}
+    45%{opacity: 1;}
+    46%{opacity: 0;}
+    55%{opacity: 0;}
+    56%{opacity: 1;}
+    68%{opacity: 1;}
+    69%{opacity: 0;}
+    78%{opacity: 0;}
+    79%{opacity: 1;}
+    83%{opacity: 1;}
+    84%{opacity: 0;}
+    93%{opacity: 0;}
+    94%{opacity: 1;}
+    98%{opacity: 1;}
+    99%{opacity: 0;}
+    100%{opacity: 0;}
+
+}
+
+#check36:checked ~ .bulatluar{
+    animation: kode36 8s ease;
+}
+
+
+
+@keyframes kode36{
+    0%{opacity: 0;}
+    9%{opacity: 0;}
+    10%{opacity: 1;}
+    21%{opacity: 1;}
+    22%{opacity: 0;}
+    31%{opacity: 0;}
+    32%{opacity: 1;}
+    43%{opacity: 1;}
+    44%{opacity: 0;}
+    53%{opacity: 0;}
+    54%{opacity: 1;}
+    65%{opacity: 1;}
+    66%{opacity: 0;}
+    75%{opacity: 0;}
+    76%{opacity: 1;}
+    87%{opacity: 1;}
+    88%{opacity: 0;}
+    96%{opacity: 0;}
+    97%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+
+
+input{
+    position: absolute;
+    
+}
+
+#check1{
+    position: absolute;
+}
+
+#check2{
+    position: absolute;
+    left: 40px;
+}
+
+#check3{
+    position: absolute;
+    left: 80px;
+}
+#check4{
+    position: absolute;
+    left: 120px;
+}
+#check5{
+    position: absolute;
+    left: 160px;
+}
+#check6{
+    position: absolute;
+    left: 200px;
+}
+#check7{
+    position: absolute;
+    left: 240px;
+}
+#check8{
+    position: absolute;
+    left: 280px;
+}
+#check9{
+    position: absolute;
+    left: 320px;
+}
+#check10{
+    position: absolute;
+    left: 360px;
+}
+#check11{
+    position: absolute;
+    top: 265px;
+    
+}
+#check12{
+    position: absolute;
+    left: 40px;
+    top: 265px;
+}
+#check13{
+    position: absolute;
+    left: 80px;
+    top: 265px;
+}
+#check14{
+    position: absolute;
+    left: 120px;
+    top: 265px;
+}
+#check15{
+    position: absolute;
+    left: 160px;
+    top: 265px;
+}
+#check16{
+    position: absolute;
+    top: 265px;
+    left: 200px;
+}
+#check17{
+    position: absolute;
+    top: 265px;
+    left: 240px;
+}
+#check18{
+    position: absolute;
+    top: 265px;
+    left: 280px;
+}
+#check19{
+    position: absolute;
+    top: 265px;
+    left: 320px;
+}
+#check20{
+    position: absolute;
+    top: 265px;
+    left: 360px;
+}
+#check21{
+    position: absolute;
+    top: 305px;
+}
+#check22{
+    position: absolute;
+    left: 40px;
+    top: 305px;
+}
+#check23{
+    position: absolute;
+    left: 80px;
+    top: 305px;
+}
+#check24{
+    position: absolute;
+    left: 120px;
+    top: 305px;
+}
+#check25{
+    position: absolute;
+    left: 160px;
+    top: 305px;
+}
+#check26{
+    position: absolute;
+    left: 200px;
+    top: 305px;
+}
+
+#check27{
+    top: 345px;
+    
+}
+#check28{
+    top: 345px;
+    left: 40px;
+}
+#check29{
+    top: 345px;
+    left: 80px;
+}
+#check30{
+    top: 345px;
+    left: 120px;
+}
+#check31{
+    top: 345px;
+    left: 160px;
+}
+#check32{
+    top: 345px;
+    left: 200px;
+}
+#check33{
+    top: 345px;
+    left: 240px;
+}
+#check34{
+    top: 345px;
+    left: 280px;
+}
+#check35{
+    top: 345px;
+    left: 320px;
+}
+#check36{
+    top: 345px;
+    left: 360px;
+}
