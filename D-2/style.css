@@ -1,0 +1,84 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f39c12;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.word{
+    margin-right: 8px;
+}
+
+.container{
+    display: flex;
+    max-height: 25px;
+    overflow: hidden;
+    font-weight: 700;
+
+}
+
+.list{
+    text-shadow: 1px 1px 1px black;
+    animation: moveUp 10s infinite;
+      
+}
+
+.item{
+    margin-bottom: 7px;
+    
+    
+}
+
+@keyframes moveUp{
+    10%, 25%{
+        transform: translateY(-115%) ;
+    }
+
+    35%, 50%{
+        transform: translateY(-230%);
+    }
+
+    60%,75%{
+        transform: translateY(-345%);
+    }
+
+    85%,100%{
+        transform: translateY(-460%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
