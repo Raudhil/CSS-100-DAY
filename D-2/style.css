@@ -36,16 +36,15 @@
 
 .container{
     display: flex;
-    max-height: 25px;
+    max-height: 35px;
     overflow: hidden;
     font-weight: 700;
-
+    font-size: 24px;
 }
 
 .list{
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,0.5);
     animation: moveUp 10s infinite;
-      
 }
 
 .item{
@@ -56,19 +55,19 @@
 
 @keyframes moveUp{
     10%, 25%{
-        transform: translateY(-115%) ;
+        transform: translateY(-113%) ;
     }
 
     35%, 50%{
-        transform: translateY(-230%);
+        transform: translateY(-226%);
     }
 
     60%,75%{
-        transform: translateY(-345%);
+        transform: translateY(-339%);
     }
 
     85%,100%{
-        transform: translateY(-460%);
+        transform: translateY(-451%);
     }
 }
 
